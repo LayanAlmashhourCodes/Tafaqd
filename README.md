@@ -22,7 +22,29 @@
 
 Every day, thousands of personal items are left behind in airports: bags, phones, wallets, chargers, keys. Recovering them still depends on manual logging, handwritten descriptions and phone calls. Staff spend hours cataloguing items, and travelers rarely find what they lost.
 
-**Tafaqd** (Arabic for *"to check on"* or *"to look for"*) replaces this process with an intelligent platform. Staff photograph a found item, and the system recognizes it, classifies it and writes a description automatically. Travelers can then find their belongings by typing a description or by uploading a photo of the item, and request it for pick-up or delivery from a single mobile application.
+**Tafaqd** replaces this process with an intelligent platform. Staff photograph a found item, and the system recognizes it, classifies it and writes a description automatically. Travelers can then find their belongings by typing a description or by uploading a photo of the item, and request it for pick-up or delivery from a single mobile application.
+
+### The Name
+
+The name *Tafaqd* (تفقّد) comes from the Holy Quran:
+
+<p align="center">
+  <strong>وَتَفَقَّدَ الطَّيْرَ</strong><br>
+  <em>"And he inspected the birds"</em><br>
+  <sub>Surah An-Naml, 27:20</sub>
+</p>
+
+The verse describes Prophet Sulaiman carefully checking on the birds under his care and noticing at once that one of them was missing. That attentiveness to what is absent is the idea behind the system: nothing that is lost should go unnoticed.
+
+## A Complete, End-to-End System
+
+Tafaqd is a fully working product, built and integrated end to end:
+
+- **AI models developed and trained:** an image classification model and an image captioning model, trained on a curated dataset of lost items and evaluated on held-out test data.
+- **AI service deployed:** the models are served through a REST inference service that the application calls in real time.
+- **Mobile application built:** a cross-platform Flutter app with two complete interfaces, one for travelers and one for airport staff.
+- **Backend integrated:** authentication, a cloud database, image storage and push notifications, all connected to the application and the AI service.
+- **Tested as one system:** unit, integration and functional testing across the model, the database and the interfaces.
 
 ## Key Results
 
@@ -121,7 +143,7 @@ The models were trained on a curated dataset of more than 800 images of items co
 
 ```
 tafaqd/
-├── assets/            Banner, logo and interface screenshots
+├── assets/            Banner and interface screenshots
 ├── docs/
 │   └── ARCHITECTURE.md   Components, request flows, AI models, dataset and data model
 ├── snippets/          Selected excerpts from the application source code
@@ -149,12 +171,11 @@ For inquiries about the project, please contact the team.
 
 | Name |
 | --- |
-| Layan Almashhour |
 | Sumayah Chowdhury |
 | Sara Al-Faifi |
+| Layan Almashhour |
 
 <p align="center">
-  <img src="assets/logo.png" alt="Tafaqd logo" width="120"><br>
   Graduation Project<br>
   <strong>College of Computer Science, King Khalid University</strong>
 </p>
