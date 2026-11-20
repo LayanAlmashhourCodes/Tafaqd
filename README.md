@@ -149,9 +149,9 @@ For inquiries about the project, please contact the team.
 
 | Name |
 | --- |
+| Layan Almashhour |
 | Sumayah Chowdhury |
 | Sara Al-Faifi |
-| Layan Al-Mashhour |
 
 <p align="center">
   <img src="assets/logo.png" alt="Tafaqd logo" width="120"><br>
